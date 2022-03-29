@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap&Cormorant+Garamond:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Art';
+    src: url(Arthead.otf);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBF7F2;
+    color: #393939;
+    transition: 1s;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: #FBF7F2;
+   
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 0 1em;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 32px;
+    background-color: black;
+    border: 2px solid black;
+    font-size: 12px;
+    border-radius: 32px;
+}
+a:hover{
+    letter-spacing: 1px;
+    transition: .6s;
+  
+}
+.logo{
+    max-width: 56px;
+}
+.sign-up{
+    
+    background: none;
+    color: black;
+  
+}
+.sign-up:hover{
+    background-color: black;
+    color: white ;
+    border: 2px solid black;
+    transition: .6s;
+}
+.box{
+    width: 980px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    transform: translate(-50%,-50%);
+    background-color: #FBF7F2;
+    
+}
+
+.navigation{
+    
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+input{
+    display: none;
+}
+.bar{
+    width: 50px;
+    height: 50px;
+}
+.bar img{
+   max-width: 42px;
+   
+}
+.bar img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+/*  Slide */
+
+.slides{
+    width: 500%;
+    display: flex;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+    background-color: #FBF7F2;
+}
+
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+    
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide3:checked ~ .s3{
+    display: block;
+}
+
+
+
+.s1{
+    background-color: #FBF7F2;
+}
+
+
+
+.left-circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 200000;
+}
+.right-circle{
+    position: absolute;
+    z-index: 200;
+    bottom: 0;
+    right: 0;
+}
+.slide.s1{
+    display: flex;
+    background-color: #FBF7F2; 
+}
+
+
+
+/* Slide 1*/
+
+.left , .right{
+    width: 100%;
+    height: 100%;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top:-30px;
+}
+
+
+
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+.art01{
+    width: 80%;
+    margin-left: -190px;
+    z-index: 1;
+}
+
+.btn-entrar{
+    background: none;
+    position: relative;
+    bottom: -90px;
+    right: 30px;
+    z-index: 300;
+}
+.btn-entrar:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+h5{
+    font-family: 'Art';
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+    z-index: 222;
+    letter-spacing: 2px;
+    color: #393939;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+    left: -100px;
+}
+.right .art01{
+    margin-left: -250px;
+}
+
+.none{
+    max-width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.h4-slide2{
+   
+  font-size: 42px;
+  text-align: center;
+  margin: 0 3em;
+  display: none;
+
+}
+
+/* Slide 2 */
+
+.s2{
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+   
+}
+.title-s2{
+    margin-bottom: 70px;
+
+}
+.text-animation1{
+    font-size: 14px;
+    position: absolute;
+    bottom: 35px;
+    right: 55px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-delay: 8s;
+}
+.text-animation2{
+    font-size: 22px;
+    position: absolute;
+    top: -25px;
+    left: -35px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-delay: 12s;
+}
+.text-animation3{
+    font-size: 42px;
+    position: absolute;
+    top: -70px;
+    left: 250px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+.text-animation4{
+    font-size: 22px;
+    position: absolute;
+    bottom: 1px;
+    left: 290px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-delay: 16s;
+}
+.text-animation5{
+    font-size: 26px;
+    position: absolute;
+    top: -70px;
+    right:-10px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-delay: 20s;
+}
+.text-animation6{
+    font-size:12px;
+    position: absolute;
+    bottom: 50px;
+    left: 115px;
+    animation: infinite;
+    animation-name: text;
+    animation-delay: 22s;
+   
+}
+
+.art02{
+    position: relative;
+
+}
+.op{
+    opacity: 0;
+}
+.op:hover{
+    opacity: 1;
+  transition: 1s;
+  cursor: default;
+}
+
+
+.hover{
+position: absolute;
+ left: 150px;
+top: 60px;
+z-index: 2000;
+max-width: 220px;
+display: none;
+
+}
+
+.art02{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* media */
+
+@media(min-width:1440px){
+    .box{
+        width: 1280px;
+        height: 600px;
+}
+
+
+}
+
+
+/* text decoration & animation */
+
+
+h5{
+    font-family: 'Art';
+    font-size: 44px;
+    margin: 0;
+    padding: 0;
+    z-index: 222;
+    letter-spacing: 2px;
+    color: #393939;
+}
+.one{
+    margin-left:-100px;
+   
+    animation: 3s;
+    animation-name: one;
+}
+.two{
+    margin-left:50px;
+    animation: 3s;
+    animation-name:two;
+}
+.three{
+    margin-left: -100px;
+    animation: 3s;
+    animation-name: three;
+
+}
+
+.four{
+    margin-left:15px;
+   
+    animation: 3s;
+    animation-name: four;
+}
+
+.one:hover{
+    transform: rotate(-20deg);
+    transition: 1s;
+    cursor: default;
+}
+.two:hover{
+    transform: rotate(20deg);
+    transition: 1s;
+    cursor: default;
+}
+.three:hover{
+    transform: rotate(-20deg);
+    transition: 1s;
+    cursor: default;
+}
+.four:hover{
+    transform: rotate(20deg);
+    transition: 1s;
+    cursor: default;
+}
+
+/*  Slide 3 */
+
+.s3{
+    display: none;
+}
+.s3-one{
+    margin-left: -20px;
+    font-size: 48px;
+    animation-name: s3one;
+    animation-duration: 2s;
+   
+
+}
+.s3-one:hover{
+    color:  linear-gradient(#e66465, #9198e5);
+    transition: 1s;
+   
+   
+}
+.s3-two{
+    font-size: 24px;
+    margin-left: 125px;
+}
+.s3-three{
+    font-size: 36px;
+    margin-left: 34px ;
+}
+.s3-four{
+    font-size: 24px;
+    margin-left: 210px;
+}
+.btn-getstarted{
+    margin-left: 190px;
+    margin-bottom: -80px;
+}
+.picasso{
+    animation-name: op;
+    animation-duration: 2s;
+}
+
+
+
+
+
+/* Animations */
+@keyframes op{
+    from{
+    opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes s3one{
+    from{
+        margin-top: -500px;
+        
+    }
+    to{
+        margin-top: 0px;
+    } 
+}
+@keyframes one{
+    from{
+        opacity: 0;
+        margin-left: 300px;
+       
+    }
+    to{
+        opacity: 1;
+       
+    }
+}
+@keyframes two{
+    from{
+        opacity: 0;
+        margin-left: -300px;
+       
+    }
+    to{
+        opacity: 1;
+       
+    }
+}
+@keyframes three{
+    from{
+        opacity: 0;
+        margin-left: 300px;
+       
+    }
+    to{
+        opacity: 1;
+       
+    }
+}
+@keyframes four{
+    from{
+        opacity: 0;
+        margin-left: -300px;
+       
+    }
+    to{
+        opacity: 1;
+       
+    }
+}
+
+@keyframes title{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+   
+}
+
+@keyframes text{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
