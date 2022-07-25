@@ -2,12 +2,8 @@
 
 Um slideshow criado apenas com CSS para uma página de boas-vindas para uma plataforma de arte.
 
-<h3 align="center">Slide 1</h3>
-<img src="prints/print1.jpeg">
-<h3 align="center">Slide 2</h3>
-<img src="prints/print2.jpeg">
-<h3 align="center">Slide 3</h3>
-<img src="prints/print3.jpeg">
+<img src="Art-Prints.gif">
+
 
 <br> 
 
