@@ -2,6 +2,8 @@
 
 Um slideshow criado apenas com CSS para uma página de boas-vindas para uma plataforma de arte.
 
+Você pode acessar o projeto [AQUI](https://vbrianb.github.io/.Art/)
+
 <img src="Art-Prints.gif">
 
 
